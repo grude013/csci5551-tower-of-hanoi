@@ -171,11 +171,11 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py:
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/a/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python from MSG baxter_core_msgs/EndpointState"
 	cd /home/a/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg
 
@@ -183,12 +183,12 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py:
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/a/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python from MSG baxter_core_msgs/EndpointStates"
 	cd /home/a/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/msg
 
@@ -246,19 +246,19 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py:
 
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/a/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Python code from SRV baxter_core_msgs/OpenCamera"
 	cd /home/a/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv -Ibaxter_core_msgs:/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv
 
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseStamped.msg
+/home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/a/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating Python code from SRV baxter_core_msgs/SolvePositionIK"
 	cd /home/a/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_core_msgs/srv
 

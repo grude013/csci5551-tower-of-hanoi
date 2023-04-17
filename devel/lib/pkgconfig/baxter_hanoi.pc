@@ -1,0 +1,8 @@
+prefix=/home/a/ros_ws/devel
+
+Name: baxter_hanoi
+Description: Description of baxter_hanoi
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

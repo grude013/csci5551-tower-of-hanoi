@@ -94,12 +94,12 @@ add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg" NAME_WE)
 add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg" "geometry_msgs/Twist:geometry_msgs/Wrench:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg" "geometry_msgs/Twist:geometry_msgs/Wrench:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Vector3:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg" NAME_WE)
 add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg" "geometry_msgs/Twist:geometry_msgs/Wrench:baxter_core_msgs/EndpointState:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg" "geometry_msgs/Twist:geometry_msgs/Wrench:geometry_msgs/Quaternion:geometry_msgs/Point:baxter_core_msgs/EndpointState:geometry_msgs/Pose:geometry_msgs/Vector3:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg" NAME_WE)
@@ -154,12 +154,12 @@ add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv" NAME_WE)
 add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv" "baxter_core_msgs/CameraSettings:baxter_core_msgs/CameraControl"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv" "baxter_core_msgs/CameraControl:baxter_core_msgs/CameraSettings"
 )
 
 get_filename_component(_filename "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv" NAME_WE)
 add_custom_target(_baxter_core_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv" "sensor_msgs/JointState:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/PoseStamped"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "baxter_core_msgs" "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv" "sensor_msgs/JointState:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose:std_msgs/Header"
 )
 
 #
@@ -261,13 +261,13 @@ _generate_msg_cpp(baxter_core_msgs
 _generate_msg_cpp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_cpp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_cpp(baxter_core_msgs
@@ -335,13 +335,13 @@ _generate_srv_cpp(baxter_core_msgs
 _generate_srv_cpp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv"
   "${MSG_I_FLAGS}"
-  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg"
+  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_srv_cpp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/baxter_core_msgs
 )
 
@@ -518,13 +518,13 @@ _generate_msg_eus(baxter_core_msgs
 _generate_msg_eus(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_eus(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_eus(baxter_core_msgs
@@ -592,13 +592,13 @@ _generate_srv_eus(baxter_core_msgs
 _generate_srv_eus(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv"
   "${MSG_I_FLAGS}"
-  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg"
+  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_srv_eus(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/baxter_core_msgs
 )
 
@@ -775,13 +775,13 @@ _generate_msg_lisp(baxter_core_msgs
 _generate_msg_lisp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_lisp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_lisp(baxter_core_msgs
@@ -849,13 +849,13 @@ _generate_srv_lisp(baxter_core_msgs
 _generate_srv_lisp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv"
   "${MSG_I_FLAGS}"
-  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg"
+  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_srv_lisp(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/baxter_core_msgs
 )
 
@@ -1032,13 +1032,13 @@ _generate_msg_nodejs(baxter_core_msgs
 _generate_msg_nodejs(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_nodejs(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_nodejs(baxter_core_msgs
@@ -1106,13 +1106,13 @@ _generate_srv_nodejs(baxter_core_msgs
 _generate_srv_nodejs(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv"
   "${MSG_I_FLAGS}"
-  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg"
+  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_srv_nodejs(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/baxter_core_msgs
 )
 
@@ -1289,13 +1289,13 @@ _generate_msg_py(baxter_core_msgs
 _generate_msg_py(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_py(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Wrench.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_msg_py(baxter_core_msgs
@@ -1363,13 +1363,13 @@ _generate_srv_py(baxter_core_msgs
 _generate_srv_py(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv"
   "${MSG_I_FLAGS}"
-  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg"
+  "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg;/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/baxter_core_msgs
 )
 _generate_srv_py(baxter_core_msgs
   "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg"
+  "/opt/ros/noetic/share/sensor_msgs/cmake/../msg/JointState.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/baxter_core_msgs
 )
 

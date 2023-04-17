@@ -1,0 +1,7 @@
+set(baxter_hanoi_SETUP_PY_SETUP_MODULE "distutils.core")
+set(baxter_hanoi_SETUP_PY_VERSION "0.0.0")
+set(baxter_hanoi_SETUP_PY_SCRIPTS "")
+set(baxter_hanoi_SETUP_PY_PACKAGES "inverse_kinematics")
+set(baxter_hanoi_SETUP_PY_PACKAGE_DIRS "src/inverse_kinematics")
+set(baxter_hanoi_SETUP_PY_MODULES "")
+set(baxter_hanoi_SETUP_PY_MODULE_DIRS "")

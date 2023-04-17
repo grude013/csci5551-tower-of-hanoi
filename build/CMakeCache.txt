@@ -428,6 +428,12 @@ baxter_examples_BINARY_DIR:STATIC=/home/a/ros_ws/build/baxter_examples
 baxter_examples_SOURCE_DIR:STATIC=/home/a/ros_ws/src/baxter_examples
 
 //Value Computed by CMake
+baxter_hanoi_BINARY_DIR:STATIC=/home/a/ros_ws/build/baxter_hanoi
+
+//Value Computed by CMake
+baxter_hanoi_SOURCE_DIR:STATIC=/home/a/ros_ws/src/baxter_hanoi
+
+//Value Computed by CMake
 baxter_interface_BINARY_DIR:STATIC=/home/a/ros_ws/build/baxter_interface
 
 //The directory containing a CMake configuration file for baxter_interface.
@@ -738,7 +744,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
