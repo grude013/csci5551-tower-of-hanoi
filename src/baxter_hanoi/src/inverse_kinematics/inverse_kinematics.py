@@ -35,7 +35,6 @@ def ik_test(limb, vals):
 	# vals = []
 	# vals = getNewPoint()
 	
-	rospy.init_node("rsdk_ik_service_client")
 	ns = "ExternalTools/" + limb + "/PositionKinematicsNode/IKService"
 	iksvc = rospy.ServiceProxy(ns, SolvePositionIK)
 	ikreq = SolvePositionIKRequest()
