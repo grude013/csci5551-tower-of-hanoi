@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/baxter_core_msgs/setup.sh

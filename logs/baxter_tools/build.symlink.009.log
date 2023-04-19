@@ -1,0 +1,4 @@
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_tools/cmake/baxter_toolsConfig-version.cmake
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_tools/cmake/baxter_toolsConfig.cmake
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/python3/dist-packages/baxter_tools/__init__.py
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/pkgconfig/baxter_tools.pc
