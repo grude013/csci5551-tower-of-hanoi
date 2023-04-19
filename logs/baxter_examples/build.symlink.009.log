@@ -1,0 +1,11 @@
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_examples/cmake/baxter_examplesConfig.cmake
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/share/baxter_examples/cmake/baxter_examplesConfig-version.cmake
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/include/baxter_examples/JointSpringsExampleConfig.h
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/python3/dist-packages/baxter_external_devices/__init__.py
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/python3/dist-packages/baxter_examples/__init__.py
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/python3/dist-packages/baxter_examples/cfg/__init__.py
+Symlinking /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/lib/pkgconfig/baxter_examples.pc
