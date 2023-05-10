@@ -1,0 +1,1 @@
+/home/a/ros_ws/devel/.private/apriltag_ros/share/gennodejs/ros/apriltag_ros/srv/_index.js

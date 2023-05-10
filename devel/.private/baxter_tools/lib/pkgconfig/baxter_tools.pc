@@ -1,4 +1,4 @@
-prefix=/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/baxter_tools
+prefix=/home/a/ros_ws/devel/.private/baxter_tools
 
 Name: baxter_tools
 Description: Description of baxter_tools

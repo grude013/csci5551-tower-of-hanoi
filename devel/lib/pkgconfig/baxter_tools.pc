@@ -1,8 +1,1 @@
-prefix=/home/a/ros_ws/devel
-
-Name: baxter_tools
-Description: Description of baxter_tools
-Version: 1.2.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: rospy sensor_msgs geometry_msgs cv_bridge baxter_interface baxter_core_msgs baxter_maintenance_msgs
+/home/a/ros_ws/devel/.private/baxter_tools/lib/pkgconfig/baxter_tools.pc

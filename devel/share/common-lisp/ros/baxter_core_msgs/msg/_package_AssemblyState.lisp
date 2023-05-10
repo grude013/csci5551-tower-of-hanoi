@@ -1,14 +1,1 @@
-(cl:in-package baxter_core_msgs-msg)
-(cl:export '(READY-VAL
-          READY
-          ENABLED-VAL
-          ENABLED
-          STOPPED-VAL
-          STOPPED
-          ERROR-VAL
-          ERROR
-          ESTOP_BUTTON-VAL
-          ESTOP_BUTTON
-          ESTOP_SOURCE-VAL
-          ESTOP_SOURCE
-))
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/common-lisp/ros/baxter_core_msgs/msg/_package_AssemblyState.lisp

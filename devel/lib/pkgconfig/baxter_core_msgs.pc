@@ -1,8 +1,1 @@
-prefix=/home/a/ros_ws/devel
-
-Name: baxter_core_msgs
-Description: Description of baxter_core_msgs
-Version: 1.2.0
-Cflags: -I/home/a/ros_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime geometry_msgs sensor_msgs std_msgs
+/home/a/ros_ws/devel/.private/baxter_core_msgs/lib/pkgconfig/baxter_core_msgs.pc

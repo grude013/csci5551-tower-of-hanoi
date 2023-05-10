@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -38,13 +38,13 @@ struct SolvePositionIKResponse_
 
 
 
-   typedef std::vector< ::sensor_msgs::JointState_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::sensor_msgs::JointState_<ContainerAllocator> >::other >  _joints_type;
+   typedef std::vector< ::sensor_msgs::JointState_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::sensor_msgs::JointState_<ContainerAllocator> >> _joints_type;
   _joints_type joints;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _isValid_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _isValid_type;
   _isValid_type isValid;
 
-   typedef std::vector<uint8_t, typename ContainerAllocator::template rebind<uint8_t>::other >  _result_type_type;
+   typedef std::vector<uint8_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint8_t>> _result_type_type;
   _result_type_type result_type;
 
 

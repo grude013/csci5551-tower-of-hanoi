@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_common
+CMAKE_SOURCE_DIR = /home/a/ros_ws/src/baxter_common/baxter_common
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_common
+CMAKE_BINARY_DIR = /home/a/ros_ws/build/baxter_common
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_common && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_common /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_common /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_common /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_common /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_common/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/a/ros_ws/build/baxter_common && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a/ros_ws/src/baxter_common/baxter_common /home/a/ros_ws/src/baxter_common/baxter_common /home/a/ros_ws/build/baxter_common /home/a/ros_ws/build/baxter_common /home/a/ros_ws/build/baxter_common/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

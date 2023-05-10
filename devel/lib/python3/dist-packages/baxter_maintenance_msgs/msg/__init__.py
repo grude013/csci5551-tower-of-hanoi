@@ -1,7 +1,1 @@
-from ._CalibrateArmData import *
-from ._CalibrateArmEnable import *
-from ._TareData import *
-from ._TareEnable import *
-from ._UpdateSource import *
-from ._UpdateSources import *
-from ._UpdateStatus import *
+/home/a/ros_ws/devel/.private/baxter_maintenance_msgs/lib/python3/dist-packages/baxter_maintenance_msgs/msg/__init__.py

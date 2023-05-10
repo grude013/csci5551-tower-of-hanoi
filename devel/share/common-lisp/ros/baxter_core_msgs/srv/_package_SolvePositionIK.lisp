@@ -1,14 +1,1 @@
-(cl:in-package baxter_core_msgs-srv)
-(cl:export '(POSE_STAMP-VAL
-          POSE_STAMP
-          SEED_ANGLES-VAL
-          SEED_ANGLES
-          SEED_MODE-VAL
-          SEED_MODE
-          JOINTS-VAL
-          JOINTS
-          ISVALID-VAL
-          ISVALID
-          RESULT_TYPE-VAL
-          RESULT_TYPE
-))
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/common-lisp/ros/baxter_core_msgs/srv/_package_SolvePositionIK.lisp

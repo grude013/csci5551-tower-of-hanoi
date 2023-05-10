@@ -68,7 +68,7 @@ set(baxter_tools_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(baxter_tools_SOURCE_PREFIX /home/a/ros_ws/src/baxter_tools)
-  set(baxter_tools_DEVEL_PREFIX /home/a/ros_ws/devel)
+  set(baxter_tools_DEVEL_PREFIX /home/a/ros_ws/devel/.private/baxter_tools)
   set(baxter_tools_INSTALL_PREFIX "")
   set(baxter_tools_PREFIX ${baxter_tools_DEVEL_PREFIX})
 else()

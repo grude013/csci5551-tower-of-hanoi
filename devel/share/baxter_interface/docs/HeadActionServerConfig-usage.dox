@@ -1,8 +1,1 @@
-\subsubsection usage Usage
-\verbatim
-<node name="" pkg="baxter_interface" type="">
-  <param name="timeout" type="double" value="5.0" />
-  <param name="goal" type="double" value="0.1396263401" />
-</node>
-\endverbatim
-
+/home/a/ros_ws/devel/.private/baxter_interface/share/baxter_interface/docs/HeadActionServerConfig-usage.dox

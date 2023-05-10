@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -63,40 +63,40 @@ struct SEAJointState_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > , typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::other >  _name_type;
+   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> _name_type;
   _name_type name;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _commanded_position_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _commanded_position_type;
   _commanded_position_type commanded_position;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _commanded_velocity_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _commanded_velocity_type;
   _commanded_velocity_type commanded_velocity;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _commanded_acceleration_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _commanded_acceleration_type;
   _commanded_acceleration_type commanded_acceleration;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _commanded_effort_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _commanded_effort_type;
   _commanded_effort_type commanded_effort;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _actual_position_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _actual_position_type;
   _actual_position_type actual_position;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _actual_velocity_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _actual_velocity_type;
   _actual_velocity_type actual_velocity;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _actual_effort_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _actual_effort_type;
   _actual_effort_type actual_effort;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _gravity_model_effort_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _gravity_model_effort_type;
   _gravity_model_effort_type gravity_model_effort;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _gravity_only_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _gravity_only_type;
   _gravity_only_type gravity_only;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _hysteresis_model_effort_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _hysteresis_model_effort_type;
   _hysteresis_model_effort_type hysteresis_model_effort;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _crosstalk_model_effort_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _crosstalk_model_effort_type;
   _crosstalk_model_effort_type crosstalk_model_effort;
 
    typedef double _hystState_type;
@@ -337,7 +337,7 @@ struct Printer< ::baxter_core_msgs::SEAJointState_<ContainerAllocator> >
     for (size_t i = 0; i < v.name.size(); ++i)
     {
       s << indent << "  name[" << i << "]: ";
-      Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.name[i]);
+      Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.name[i]);
     }
     s << indent << "commanded_position[]" << std::endl;
     for (size_t i = 0; i < v.commanded_position.size(); ++i)

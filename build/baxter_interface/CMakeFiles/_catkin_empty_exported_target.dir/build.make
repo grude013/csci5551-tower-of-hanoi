@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_interface
+CMAKE_SOURCE_DIR = /home/a/ros_ws/src/baxter_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface
+CMAKE_BINARY_DIR = /home/a/ros_ws/build/baxter_interface
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -67,6 +67,6 @@ CMakeFiles/_catkin_empty_exported_target.dir/clean:
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_interface /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_interface /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/a/ros_ws/build/baxter_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a/ros_ws/src/baxter_interface /home/a/ros_ws/src/baxter_interface /home/a/ros_ws/build/baxter_interface /home/a/ros_ws/build/baxter_interface /home/a/ros_ws/build/baxter_interface/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/depend
 

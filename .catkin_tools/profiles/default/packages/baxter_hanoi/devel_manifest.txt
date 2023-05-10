@@ -1,0 +1,8 @@
+baxter_hanoi
+/home/a/ros_ws/devel/.private/baxter_hanoi/cmake.lock /home/a/ros_ws/devel/./cmake.lock
+/home/a/ros_ws/devel/.private/baxter_hanoi/share/baxter_hanoi/cmake/baxter_hanoiConfig-version.cmake /home/a/ros_ws/devel/share/baxter_hanoi/cmake/baxter_hanoiConfig-version.cmake
+/home/a/ros_ws/devel/.private/baxter_hanoi/share/baxter_hanoi/cmake/baxter_hanoiConfig.cmake /home/a/ros_ws/devel/share/baxter_hanoi/cmake/baxter_hanoiConfig.cmake
+/home/a/ros_ws/devel/.private/baxter_hanoi/lib/python3/dist-packages/inverse_kinematics/__init__.py /home/a/ros_ws/devel/lib/python3/dist-packages/inverse_kinematics/__init__.py
+/home/a/ros_ws/devel/.private/baxter_hanoi/lib/baxter_hanoi/hanoi_algorithm.py /home/a/ros_ws/devel/lib/baxter_hanoi/hanoi_algorithm.py
+/home/a/ros_ws/devel/.private/baxter_hanoi/lib/baxter_hanoi/cmake.lock /home/a/ros_ws/devel/lib/baxter_hanoi/cmake.lock
+/home/a/ros_ws/devel/.private/baxter_hanoi/lib/pkgconfig/baxter_hanoi.pc /home/a/ros_ws/devel/lib/pkgconfig/baxter_hanoi.pc

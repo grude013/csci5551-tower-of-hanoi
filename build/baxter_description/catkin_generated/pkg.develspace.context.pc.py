@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "baxter_description"
-PROJECT_SPACE_DIR = "/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/baxter_description"
+PROJECT_SPACE_DIR = "/home/a/ros_ws/devel/.private/baxter_description"
 PROJECT_VERSION = "1.2.0"

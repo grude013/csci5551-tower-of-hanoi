@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -44,13 +44,13 @@ struct EndEffectorCommand_
    typedef uint32_t _id_type;
   _id_type id;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _command_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _command_type;
   _command_type command;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _args_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _args_type;
   _args_type args;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _sender_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _sender_type;
   _sender_type sender;
 
    typedef uint32_t _sequence_type;
@@ -97,18 +97,18 @@ struct EndEffectorCommand_
 #endif
 
 
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_NO_OP;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_SET;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_CONFIGURE;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_REBOOT;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_RESET;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_CALIBRATE;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_CLEAR_CALIBRATION;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_PREPARE_TO_GRIP;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_GRIP;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_RELEASE;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_GO;
-  static const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  CMD_STOP;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_NO_OP;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_SET;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_CONFIGURE;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_REBOOT;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_RESET;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_CALIBRATE;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_CLEAR_CALIBRATION;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_PREPARE_TO_GRIP;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_GRIP;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_RELEASE;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_GO;
+  static const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> CMD_STOP;
 
   typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> const> ConstPtr;
@@ -123,7 +123,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
 // constants requiring out of line definition
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_NO_OP =
         
           "no_op"
@@ -132,7 +132,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_SET =
         
           "set"
@@ -141,7 +141,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_CONFIGURE =
         
           "configure"
@@ -150,7 +150,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_REBOOT =
         
           "reboot"
@@ -159,7 +159,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_RESET =
         
           "reset"
@@ -168,7 +168,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_CALIBRATE =
         
           "calibrate"
@@ -177,7 +177,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_CLEAR_CALIBRATION =
         
           "clear_calibration"
@@ -186,7 +186,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_PREPARE_TO_GRIP =
         
           "prepare_to_grip"
@@ -195,7 +195,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_GRIP =
         
           "grip"
@@ -204,7 +204,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_RELEASE =
         
           "release"
@@ -213,7 +213,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_GO =
         
           "go"
@@ -222,7 +222,7 @@ typedef boost::shared_ptr< ::baxter_core_msgs::EndEffectorCommand const> EndEffe
    
 
    
-   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > 
+   template<typename ContainerAllocator> const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>
       EndEffectorCommand_<ContainerAllocator>::CMD_STOP =
         
           "stop"
@@ -394,11 +394,11 @@ struct Printer< ::baxter_core_msgs::EndEffectorCommand_<ContainerAllocator> >
     s << indent << "id: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.id);
     s << indent << "command: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.command);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.command);
     s << indent << "args: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.args);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.args);
     s << indent << "sender: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.sender);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.sender);
     s << indent << "sequence: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.sequence);
   }

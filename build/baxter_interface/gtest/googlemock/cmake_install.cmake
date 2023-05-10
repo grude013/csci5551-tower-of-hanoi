@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/install")
+  set(CMAKE_INSTALL_PREFIX "/home/a/ros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_interface/gtest/googletest/cmake_install.cmake")
+  include("/home/a/ros_ws/build/baxter_interface/gtest/googletest/cmake_install.cmake")
 
 endif()
 

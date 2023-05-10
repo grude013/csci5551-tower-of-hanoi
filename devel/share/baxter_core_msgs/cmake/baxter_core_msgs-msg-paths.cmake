@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(baxter_core_msgs_MSG_INCLUDE_DIRS "/home/a/ros_ws/src/baxter_common/baxter_core_msgs/msg")
-set(baxter_core_msgs_MSG_DEPENDENCIES geometry_msgs;sensor_msgs;std_msgs)
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs-msg-paths.cmake

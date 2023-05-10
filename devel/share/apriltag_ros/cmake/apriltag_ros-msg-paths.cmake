@@ -1,0 +1,1 @@
+/home/a/ros_ws/devel/.private/apriltag_ros/share/apriltag_ros/cmake/apriltag_ros-msg-paths.cmake

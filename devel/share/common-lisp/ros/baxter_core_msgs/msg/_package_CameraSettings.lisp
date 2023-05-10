@@ -1,10 +1,1 @@
-(cl:in-package baxter_core_msgs-msg)
-(cl:export '(WIDTH-VAL
-          WIDTH
-          HEIGHT-VAL
-          HEIGHT
-          FPS-VAL
-          FPS
-          CONTROLS-VAL
-          CONTROLS
-))
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/common-lisp/ros/baxter_core_msgs/msg/_package_CameraSettings.lisp

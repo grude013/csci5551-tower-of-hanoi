@@ -1,0 +1,13 @@
+baxter_examples
+/home/a/ros_ws/devel/.private/baxter_examples/cmake.lock /home/a/ros_ws/devel/./cmake.lock
+/home/a/ros_ws/devel/.private/baxter_examples/include/baxter_examples/JointSpringsExampleConfig.h /home/a/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+/home/a/ros_ws/devel/.private/baxter_examples/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox /home/a/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
+/home/a/ros_ws/devel/.private/baxter_examples/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc /home/a/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
+/home/a/ros_ws/devel/.private/baxter_examples/share/baxter_examples/docs/JointSpringsExampleConfig.dox /home/a/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
+/home/a/ros_ws/devel/.private/baxter_examples/share/baxter_examples/cmake/baxter_examplesConfig.cmake /home/a/ros_ws/devel/share/baxter_examples/cmake/baxter_examplesConfig.cmake
+/home/a/ros_ws/devel/.private/baxter_examples/share/baxter_examples/cmake/baxter_examplesConfig-version.cmake /home/a/ros_ws/devel/share/baxter_examples/cmake/baxter_examplesConfig-version.cmake
+/home/a/ros_ws/devel/.private/baxter_examples/lib/python3/dist-packages/baxter_examples/__init__.py /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_examples/__init__.py
+/home/a/ros_ws/devel/.private/baxter_examples/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+/home/a/ros_ws/devel/.private/baxter_examples/lib/python3/dist-packages/baxter_examples/cfg/__init__.py /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_examples/cfg/__init__.py
+/home/a/ros_ws/devel/.private/baxter_examples/lib/python3/dist-packages/baxter_external_devices/__init__.py /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_external_devices/__init__.py
+/home/a/ros_ws/devel/.private/baxter_examples/lib/pkgconfig/baxter_examples.pc /home/a/ros_ws/devel/lib/pkgconfig/baxter_examples.pc

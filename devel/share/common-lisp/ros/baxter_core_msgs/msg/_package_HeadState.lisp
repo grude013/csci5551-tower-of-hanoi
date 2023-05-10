@@ -1,10 +1,1 @@
-(cl:in-package baxter_core_msgs-msg)
-(cl:export '(PAN-VAL
-          PAN
-          ISTURNING-VAL
-          ISTURNING
-          ISNODDING-VAL
-          ISNODDING
-          ISPANENABLED-VAL
-          ISPANENABLED
-))
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/common-lisp/ros/baxter_core_msgs/msg/_package_HeadState.lisp

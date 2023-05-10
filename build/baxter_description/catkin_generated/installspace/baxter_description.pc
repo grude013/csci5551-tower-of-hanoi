@@ -1,4 +1,4 @@
-prefix=/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/install
+prefix=/home/a/ros_ws/install
 
 Name: baxter_description
 Description: Description of baxter_description

@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/baxter_hanoi}
+: ${_CATKIN_SETUP_DIR:=/home/a/ros_ws/devel/.private/baxter_hanoi}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS
