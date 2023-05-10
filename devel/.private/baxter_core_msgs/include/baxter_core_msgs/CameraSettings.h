@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -49,7 +49,7 @@ struct CameraSettings_
    typedef float _fps_type;
   _fps_type fps;
 
-   typedef std::vector< ::baxter_core_msgs::CameraControl_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::baxter_core_msgs::CameraControl_<ContainerAllocator> >::other >  _controls_type;
+   typedef std::vector< ::baxter_core_msgs::CameraControl_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::baxter_core_msgs::CameraControl_<ContainerAllocator> >> _controls_type;
   _controls_type controls;
 
 

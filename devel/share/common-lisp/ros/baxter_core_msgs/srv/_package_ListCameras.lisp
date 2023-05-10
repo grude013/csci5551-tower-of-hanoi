@@ -1,4 +1,1 @@
-(cl:in-package baxter_core_msgs-srv)
-(cl:export '(CAMERAS-VAL
-          CAMERAS
-))
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/common-lisp/ros/baxter_core_msgs/srv/_package_ListCameras.lisp

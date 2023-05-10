@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp
+Change Dir: /home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1ef5f/fast && /usr/bin/make -f CMakeFiles/cmTC_1ef5f.dir/build.make CMakeFiles/cmTC_1ef5f.dir/build
-make[1]: Entering directory '/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1ef5f.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1ef5f.dir/src.c.o   -c /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1ef5f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ef5f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_1ef5f.dir/src.c.o  -o cmTC_1ef5f 
-/usr/bin/ld: CMakeFiles/cmTC_1ef5f.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+Run Build Command(s):/usr/bin/make cmTC_76b2d/fast && /usr/bin/make -f CMakeFiles/cmTC_76b2d.dir/build.make CMakeFiles/cmTC_76b2d.dir/build
+make[1]: Entering directory '/home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76b2d.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_76b2d.dir/src.c.o   -c /home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_76b2d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76b2d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_76b2d.dir/src.c.o  -o cmTC_76b2d 
+/usr/bin/ld: CMakeFiles/cmTC_76b2d.dir/src.c.o: in function `main':
+src.c:(.text+0x48): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_1ef5f.dir/build.make:87: cmTC_1ef5f] Error 1
-make[1]: Leaving directory '/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_1ef5f/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_76b2d.dir/build.make:87: cmTC_76b2d] Error 1
+make[1]: Leaving directory '/home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_76b2d/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp
+Change Dir: /home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_6d296/fast && /usr/bin/make -f CMakeFiles/cmTC_6d296.dir/build.make CMakeFiles/cmTC_6d296.dir/build
-make[1]: Entering directory '/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6d296.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6d296.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_6d296
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d296.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6d296.dir/CheckFunctionExists.c.o  -o cmTC_6d296  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_6a756/fast && /usr/bin/make -f CMakeFiles/cmTC_6a756.dir/build.make CMakeFiles/cmTC_6a756.dir/build
+make[1]: Entering directory '/home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a756.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6a756.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6a756
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a756.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6a756.dir/CheckFunctionExists.c.o  -o cmTC_6a756  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_6d296.dir/build.make:87: cmTC_6d296] Error 1
-make[1]: Leaving directory '/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_examples/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_6d296/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_6a756.dir/build.make:87: cmTC_6a756] Error 1
+make[1]: Leaving directory '/home/a/ros_ws/build/baxter_examples/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6a756/fast] Error 2
 
 
 

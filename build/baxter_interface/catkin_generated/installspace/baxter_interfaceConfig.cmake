@@ -68,7 +68,7 @@ set(baxter_interface_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(baxter_interface_SOURCE_PREFIX /home/a/ros_ws/src/baxter_interface)
-  set(baxter_interface_DEVEL_PREFIX /home/a/ros_ws/devel)
+  set(baxter_interface_DEVEL_PREFIX /home/a/ros_ws/devel/.private/baxter_interface)
   set(baxter_interface_INSTALL_PREFIX "")
   set(baxter_interface_PREFIX ${baxter_interface_DEVEL_PREFIX})
 else()

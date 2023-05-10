@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -43,7 +43,7 @@ struct UpdateStatus_
    typedef float _progress_type;
   _progress_type progress;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _long_description_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _long_description_type;
   _long_description_type long_description;
 
 
@@ -292,7 +292,7 @@ struct Printer< ::baxter_maintenance_msgs::UpdateStatus_<ContainerAllocator> >
     s << indent << "progress: ";
     Printer<float>::stream(s, indent + "  ", v.progress);
     s << indent << "long_description: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.long_description);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.long_description);
   }
 };
 

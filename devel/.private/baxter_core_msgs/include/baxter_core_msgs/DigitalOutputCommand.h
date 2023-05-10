@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -35,7 +35,7 @@ struct DigitalOutputCommand_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _name_type;
   _name_type name;
 
    typedef uint8_t _value_type;
@@ -195,7 +195,7 @@ struct Printer< ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::baxter_core_msgs::DigitalOutputCommand_<ContainerAllocator>& v)
   {
     s << indent << "name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.name);
     s << indent << "value: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.value);
   }

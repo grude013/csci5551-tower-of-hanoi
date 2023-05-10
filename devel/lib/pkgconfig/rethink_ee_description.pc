@@ -1,8 +1,1 @@
-prefix=/home/a/ros_ws/devel
-
-Name: rethink_ee_description
-Description: Description of rethink_ee_description
-Version: 1.2.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/a/ros_ws/devel/.private/rethink_ee_description/lib/pkgconfig/rethink_ee_description.pc

@@ -1,4 +1,1 @@
-from ._CloseCamera import *
-from ._ListCameras import *
-from ._OpenCamera import *
-from ._SolvePositionIK import *
+/home/a/ros_ws/devel/.private/baxter_core_msgs/lib/python3/dist-packages/baxter_core_msgs/srv/__init__.py

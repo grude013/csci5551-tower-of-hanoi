@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_description
+CMAKE_SOURCE_DIR = /home/a/ros_ws/src/baxter_common/baxter_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_description
+CMAKE_BINARY_DIR = /home/a/ros_ws/build/baxter_description
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_description/CMakeFiles /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_description/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a/ros_ws/build/baxter_description/CMakeFiles /home/a/ros_ws/build/baxter_description/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_description/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/a/ros_ws/build/baxter_description/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

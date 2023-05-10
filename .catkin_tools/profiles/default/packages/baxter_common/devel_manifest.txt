@@ -1,0 +1,2 @@
+baxter_common/baxter_common
+/home/a/ros_ws/devel/.private/baxter_common/cmake.lock /home/a/ros_ws/devel/./cmake.lock

@@ -1,0 +1,1 @@
+/home/a/ros_ws/devel/.private/baxter_examples/lib/python3/dist-packages/baxter_examples/cfg/__init__.py

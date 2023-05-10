@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_core_msgs
+CMAKE_SOURCE_DIR = /home/a/ros_ws/src/baxter_common/baxter_core_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_core_msgs
+CMAKE_BINARY_DIR = /home/a/ros_ws/build/baxter_core_msgs
 
 # Utility rule file for baxter_core_msgs_gennodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/baxter_core_msgs_gennodejs.dir/clean:
 .PHONY : CMakeFiles/baxter_core_msgs_gennodejs.dir/clean
 
 CMakeFiles/baxter_core_msgs_gennodejs.dir/depend:
-	cd /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_core_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_core_msgs /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/baxter_core_msgs /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_core_msgs /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_core_msgs /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_core_msgs/CMakeFiles/baxter_core_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/a/ros_ws/build/baxter_core_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a/ros_ws/src/baxter_common/baxter_core_msgs /home/a/ros_ws/src/baxter_common/baxter_core_msgs /home/a/ros_ws/build/baxter_core_msgs /home/a/ros_ws/build/baxter_core_msgs /home/a/ros_ws/build/baxter_core_msgs/CMakeFiles/baxter_core_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/baxter_core_msgs_gennodejs.dir/depend
 

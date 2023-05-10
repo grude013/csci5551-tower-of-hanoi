@@ -1,0 +1,6 @@
+baxter_tools
+/home/a/ros_ws/devel/.private/baxter_tools/cmake.lock /home/a/ros_ws/devel/./cmake.lock
+/home/a/ros_ws/devel/.private/baxter_tools/share/baxter_tools/cmake/baxter_toolsConfig-version.cmake /home/a/ros_ws/devel/share/baxter_tools/cmake/baxter_toolsConfig-version.cmake
+/home/a/ros_ws/devel/.private/baxter_tools/share/baxter_tools/cmake/baxter_toolsConfig.cmake /home/a/ros_ws/devel/share/baxter_tools/cmake/baxter_toolsConfig.cmake
+/home/a/ros_ws/devel/.private/baxter_tools/lib/python3/dist-packages/baxter_tools/__init__.py /home/a/ros_ws/devel/lib/python3/dist-packages/baxter_tools/__init__.py
+/home/a/ros_ws/devel/.private/baxter_tools/lib/pkgconfig/baxter_tools.pc /home/a/ros_ws/devel/lib/pkgconfig/baxter_tools.pc

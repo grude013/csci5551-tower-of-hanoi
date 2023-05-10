@@ -1,10 +1,1 @@
-(cl:in-package baxter_maintenance_msgs-msg)
-(cl:export '(DEVNAME-VAL
-          DEVNAME
-          FILENAME-VAL
-          FILENAME
-          VERSION-VAL
-          VERSION
-          UUID-VAL
-          UUID
-))
+/home/a/ros_ws/devel/.private/baxter_maintenance_msgs/share/common-lisp/ros/baxter_maintenance_msgs/msg/_package_UpdateSource.lisp

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -36,10 +36,10 @@ struct UpdateSources_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _uuid_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _uuid_type;
   _uuid_type uuid;
 
-   typedef std::vector< ::baxter_maintenance_msgs::UpdateSource_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::baxter_maintenance_msgs::UpdateSource_<ContainerAllocator> >::other >  _sources_type;
+   typedef std::vector< ::baxter_maintenance_msgs::UpdateSource_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::baxter_maintenance_msgs::UpdateSource_<ContainerAllocator> >> _sources_type;
   _sources_type sources;
 
 
@@ -201,7 +201,7 @@ struct Printer< ::baxter_maintenance_msgs::UpdateSources_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::baxter_maintenance_msgs::UpdateSources_<ContainerAllocator>& v)
   {
     s << indent << "uuid: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.uuid);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.uuid);
     s << indent << "sources[]" << std::endl;
     for (size_t i = 0; i < v.sources.size(); ++i)
     {

@@ -68,7 +68,7 @@ set(baxter_examples_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(baxter_examples_SOURCE_PREFIX /home/a/ros_ws/src/baxter_examples)
-  set(baxter_examples_DEVEL_PREFIX /home/a/ros_ws/devel)
+  set(baxter_examples_DEVEL_PREFIX /home/a/ros_ws/devel/.private/baxter_examples)
   set(baxter_examples_INSTALL_PREFIX "")
   set(baxter_examples_PREFIX ${baxter_examples_DEVEL_PREFIX})
 else()

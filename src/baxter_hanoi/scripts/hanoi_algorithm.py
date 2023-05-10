@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
 import rospy
+
 import baxter_interface
+import baxter_external_devices
+
 from inverse_kinematics import inverse_kinematics
 
 from baxter_interface import CHECK_VERSION
@@ -20,10 +23,10 @@ right_gripper.calibrate()
 
 # constant variables
 disks = 3
-y_offset = 0.05
+y_offset = 0.04
 cube_height = 0.025
 move_height = -0.1
-table_height = -0.27
+table_height = -0.27 + 0.025/4
 drop_offset = 0.03
 
 # height of each slot
@@ -33,10 +36,28 @@ slot_height[0] = disks
 # arm positions
 slot_positions = [
     [0.65, -0.3, move_height, -1, 1, 0, 0],
-    [0.65, -0.15, move_height, -1, 1, 0, 0],
-    [0.65, 0, move_height, -1, 1, 0, 0]
+    [0.65+0.024/4, -0.235, move_height, -1, 1, 0, 0],
+    [0.65+0.024/2, -0.17, move_height, -1, 1, 0, 0]
 ]
 
+# move to calibration position
+calibration_position = [0.65, -0.3-0.0495, -0.255, -1, 1, 0, 0]
+inverse_kinematics.ik_test('right', calibration_position)
+
+# wait till SPACE is clicked
+print("Position the base against the gripper and then click SPACE to continue")
+while not rospy.is_shutdown():
+    c = baxter_external_devices.getch()
+    if c in ['\x1b', '\x03']:
+        done = True
+        rospy.signal_shutdown("Example finished.")
+    if c == ' ':
+        break
+
+# move away from base so that the cardboard isn't hit
+calibration_position[1] -= y_offset
+calibration_position[2] = move_height
+inverse_kinematics.ik_test('right', calibration_position)
 
 # arm moves block from from_rod to to_rod
 def arm_move_block(from_rod, to_rod):
@@ -64,12 +85,12 @@ def arm_move_block(from_rod, to_rod):
     rospy.sleep(0.5)
 
     # move sideways to get clear of stack
-    slot_positions[to_rod - 1][1] -= y_offset
+    slot_positions[to_rod - 1][1] += y_offset
     inverse_kinematics.ik_test('right', slot_positions[to_rod - 1])
 
     # move up
     slot_positions[to_rod - 1][2] = move_height
-    slot_positions[to_rod - 1][1] += y_offset
+    slot_positions[to_rod - 1][1] -= y_offset
     inverse_kinematics.ik_test('right', slot_positions[to_rod - 1])
 
 

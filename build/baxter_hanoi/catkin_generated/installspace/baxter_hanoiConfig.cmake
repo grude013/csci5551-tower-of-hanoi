@@ -68,7 +68,7 @@ set(baxter_hanoi_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(baxter_hanoi_SOURCE_PREFIX /home/a/ros_ws/src/baxter_hanoi)
-  set(baxter_hanoi_DEVEL_PREFIX /home/a/ros_ws/devel)
+  set(baxter_hanoi_DEVEL_PREFIX /home/a/ros_ws/devel/.private/baxter_hanoi)
   set(baxter_hanoi_INSTALL_PREFIX "")
   set(baxter_hanoi_PREFIX ${baxter_hanoi_DEVEL_PREFIX})
 else()

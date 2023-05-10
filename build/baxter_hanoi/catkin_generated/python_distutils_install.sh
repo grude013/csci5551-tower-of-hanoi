@@ -22,8 +22,8 @@ echo_and_run mkdir -p "$DESTDIR/home/a/ros_ws/install/lib/python3/dist-packages"
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/a/ros_ws/install/lib/python3/dist-packages:/home/a/ros_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/a/ros_ws/build" \
+    PYTHONPATH="/home/a/ros_ws/install/lib/python3/dist-packages:/home/a/ros_ws/build/baxter_hanoi/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/a/ros_ws/build/baxter_hanoi" \
     "/usr/bin/python3" \
     "/home/a/ros_ws/src/baxter_hanoi/setup.py" \
      \

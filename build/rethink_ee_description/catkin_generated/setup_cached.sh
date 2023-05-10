@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/rethink_ee_description:$CMAKE_PREFIX_PATH"
-export PWD='/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/rethink_ee_description'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel/.private/rethink_ee_description/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_common/rethink_ee_description:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/a/ros_ws/devel/.private/rethink_ee_description:$CMAKE_PREFIX_PATH"
+export PWD='/home/a/ros_ws/build/rethink_ee_description'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/a/ros_ws/devel/.private/rethink_ee_description/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/a/ros_ws/src/baxter_common/rethink_ee_description:$ROS_PACKAGE_PATH"

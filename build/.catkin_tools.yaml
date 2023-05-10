@@ -1,6 +1,6 @@
-devel_space: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/devel
+devel_space: /home/a/ros_ws/devel
 install: false
-install_space: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/install
+install_space: /home/a/ros_ws/install
 profile: default
-source_space: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src
-workspace: /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi
+source_space: /home/a/ros_ws/src
+workspace: /home/a/ros_ws

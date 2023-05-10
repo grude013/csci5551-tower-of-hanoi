@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -41,7 +41,7 @@ struct TareEnable_
    typedef uint8_t _isEnabled_type;
   _isEnabled_type isEnabled;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _uid_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _uid_type;
   _uid_type uid;
 
    typedef  ::baxter_maintenance_msgs::TareData_<ContainerAllocator>  _data_type;
@@ -208,7 +208,7 @@ struct Printer< ::baxter_maintenance_msgs::TareEnable_<ContainerAllocator> >
     s << indent << "isEnabled: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.isEnabled);
     s << indent << "uid: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.uid);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.uid);
     s << indent << "data: ";
     s << std::endl;
     Printer< ::baxter_maintenance_msgs::TareData_<ContainerAllocator> >::stream(s, indent + "  ", v.data);

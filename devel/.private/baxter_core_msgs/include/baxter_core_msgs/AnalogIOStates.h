@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -36,10 +36,10 @@ struct AnalogIOStates_
 
 
 
-   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > , typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::other >  _names_type;
+   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> _names_type;
   _names_type names;
 
-   typedef std::vector< ::baxter_core_msgs::AnalogIOState_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::baxter_core_msgs::AnalogIOState_<ContainerAllocator> >::other >  _states_type;
+   typedef std::vector< ::baxter_core_msgs::AnalogIOState_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::baxter_core_msgs::AnalogIOState_<ContainerAllocator> >> _states_type;
   _states_type states;
 
 
@@ -202,7 +202,7 @@ struct Printer< ::baxter_core_msgs::AnalogIOStates_<ContainerAllocator> >
     for (size_t i = 0; i < v.names.size(); ++i)
     {
       s << indent << "  names[" << i << "]: ";
-      Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.names[i]);
+      Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.names[i]);
     }
     s << indent << "states[]" << std::endl;
     for (size_t i = 0; i < v.states.size(); ++i)

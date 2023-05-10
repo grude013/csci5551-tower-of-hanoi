@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_hanoi
+CMAKE_SOURCE_DIR = /home/a/ros_ws/src/baxter_hanoi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi
+CMAKE_BINARY_DIR = /home/a/ros_ws/build/baxter_hanoi
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxt
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/a/ros_ws/build/baxter_hanoi/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_hanoi /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/src/baxter_hanoi /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi /home/ros/TowerOfHanoi5551/csci5551-tower-of-hanoi/build/baxter_hanoi/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/a/ros_ws/build/baxter_hanoi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/a/ros_ws/src/baxter_hanoi /home/a/ros_ws/src/baxter_hanoi /home/a/ros_ws/build/baxter_hanoi /home/a/ros_ws/build/baxter_hanoi /home/a/ros_ws/build/baxter_hanoi/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

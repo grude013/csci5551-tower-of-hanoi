@@ -1,14 +1,1 @@
-
-"use strict";
-
-let CloseCamera = require('./CloseCamera.js')
-let OpenCamera = require('./OpenCamera.js')
-let ListCameras = require('./ListCameras.js')
-let SolvePositionIK = require('./SolvePositionIK.js')
-
-module.exports = {
-  CloseCamera: CloseCamera,
-  OpenCamera: OpenCamera,
-  ListCameras: ListCameras,
-  SolvePositionIK: SolvePositionIK,
-};
+/home/a/ros_ws/devel/.private/baxter_core_msgs/share/gennodejs/ros/baxter_core_msgs/srv/_index.js
